@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <% flash.each do |key, value|%>
+      <div class="aleat aleat-<%= key %>" role="alert"><%= value %></div>
+    <% end %>  
     <%= yield %>
+    
+<script>
+  $(function(){
+    $(".alert").fadeout(5000);
+  });
+  </script>
+  
   </body>
 </html>

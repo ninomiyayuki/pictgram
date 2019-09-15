@@ -64,3 +64,10 @@ h1, h2 {
     }
   }
 }
+
+.alert {
+   marjin-bottom: 0px;
+   position: fixed;
+   width: 100%;
+   z-index: 10000;
+}

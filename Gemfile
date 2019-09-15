@@ -68,3 +68,7 @@ gem 'jquery-rails'
 
 # この行を追加する
 gem 'bootstrap-sass'
+
+gem "jquery-rails"
+
+gem 'bcrypt'
