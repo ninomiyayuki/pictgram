@@ -1,0 +1,27 @@
+
+<div class="topic-new-wrapper" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1 class="text-center">Add Picture</h1>
+        <%= form_for @topic do |f| %>
+          <div class="form-group">
+            <%= f.label :image %>
+            <%= f.file_field :image%>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :description %>
+            <%= f.text_area :description, class: 'form-control' %>
+          </div>
+          
+          <% if logged_in? %>
+           <%= f.submit '投稿', class: 'btn btn-black btn-block' %>
+          <% end %>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+

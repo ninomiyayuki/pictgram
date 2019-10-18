@@ -7,4 +7,7 @@ class User < ApplicationRecord
   validates_format_of :password, :with => /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]{8,32}+\z/i, :message => "は1文字以上の英数混在で入力してください。"
 
   has_secure_password
+  
+  has_many :topics
+  has_many :favorites
 end  
